@@ -40,7 +40,7 @@ pipeline {
         steps {
             withAWS(region:'eu-west-1', credentials:'aws-credentials'){
                 sh 'aws cloudformation create-stack --stack-name prod --template-body file://deployment.yml' 
-                sh 'docker run -p 80:80 -d --name my-app nginx-container'
+                sh 'docker run -p 8080:80 -d --name webserver nginx-container'
                 }
             }
         }
