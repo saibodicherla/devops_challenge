@@ -120,7 +120,7 @@ Resources:
                     sudo chmod 666 /var/run/docker.sock
                     docker run hello-world
                     sudo systemctl restart docker 
-                    docker run -it --rm -d -p 80:80 --name grid-app nginx-container
+                    docker run -it --rm -d -p 80:80 --name my-app nginx-container
             ImageId: ami-0823c236601fef765
             SecurityGroups:
                 - Ref: ProdServerSecurityGroup
