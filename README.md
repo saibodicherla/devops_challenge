@@ -61,6 +61,6 @@ Test your environment using Kubectl and eksctl
 > ./create.sh stackname Jenkins_infra.yml Jenkins_parameters.json
 ```
 
-4. Start the Git webhook, AWS ECR credentials into Jenkins peiple and Run the build.
+4. Add the Git webhook, AWS ECR credentials integrate to Jenkins peiple and Run the build.
 
-5. Eventually, The nginx conainter should be access through: ```bash > http://publicDNS:80 ```
+5. Eventually, The nginx conainter should be access through: ``` http://publicDNS:80 ```
